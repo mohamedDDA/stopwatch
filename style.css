@@ -1,0 +1,129 @@
+/* Importing Poppins from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+}
+
+#container {
+    width: 720px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+}
+
+#stopwatch {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#stopwatch label {
+    font-size: 20px;
+    color: #747474;
+}
+
+#stopwatch span {
+    font-size: 40px;
+}
+
+#stopwatch #buttons {
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#stopwatch #buttons i {
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    background: linear-gradient(to top right, #eee, #ddd);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#stopwatch #buttons i.no-click {
+    cursor: auto;
+    opacity: 0.7;
+}
+
+#stopwatch #buttons i.can-click:hover {
+    color: #484747;
+}
+
+#stopwatch #buttons i.fa-play,
+#stopwatch #buttons i.fa-pause {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    color: #f5f4f4;
+    background: linear-gradient(to bottom right, #f10e0e, #b61e1e);
+}
+
+#stopwatch #buttons i.hide {
+    display: none;
+}
+
+#stopwatch #buttons i.fa-play:hover,
+#stopwatch #buttons i.fa-pause:hover {
+    color: #eee;
+}
+
+#stopwatch label:nth-child(3) {
+    margin-top: 20px;
+    display: none;
+}
+
+#stopwatch #laps {
+    display: none;
+    width: 40%;
+    flex-direction: column;
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+#stopwatch #laps .lap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2px;
+}
+
+#stopwatch #laps .lap:last-child {
+    margin: 0;
+}
+
+#stopwatch #laps .lap .time {
+    font-size: 20px;
+}
+
+#stopwatch #laps .lap .mtp {
+    font-size: 18px;
+    color: #0e70f1;
+}
